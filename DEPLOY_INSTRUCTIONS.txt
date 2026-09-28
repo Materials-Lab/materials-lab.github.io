@@ -1,0 +1,35 @@
+MATERIALSLAB — GITHUB PAGES DEPLOYMENT
+
+This folder contains only the static production files required for MaterialsLab.
+
+Target repository:
+Materials-Lab/materials-lab.github.io
+
+UPLOAD:
+1. Open the repository on GitHub.
+2. Choose Add file > Upload files.
+3. EXTRACT this ZIP on your computer first.
+4. Open the extracted MaterialsLab_GitHub_Pages_Ready folder.
+5. Select EVERYTHING INSIDE the folder (not the folder itself) and drag it into GitHub.
+6. Commit directly to the main branch.
+
+Important:
+- index.html must be at the repository root.
+- Keep .nojekyll.
+- Keep the assets, models, images, environments, draco, and explore folders.
+- Do not upload the original 873-file source export to GitHub Pages.
+- Do not add a CNAME file for the github.io address.
+
+After upload:
+Repository Settings > Pages > Build and deployment > Deploy from a branch
+Branch: main
+Folder: / (root)
+Save.
+
+Expected public URL:
+https://materials-lab.github.io/
+
+Technical note:
+This exported build is root-path based, which is appropriate for an organization
+Pages site at materials-lab.github.io. It includes pre-rendered Home and Explore
+pages and all required 3D models/assets.
